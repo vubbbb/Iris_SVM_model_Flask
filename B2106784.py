@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__) # Initialize the flask App
-model = pickle.load(open('SVM_Iris_model.pkl', 'rb')) # Load the trained model
+model = pickle.load(open('B2106784_model.pkl', 'rb')) # Load the trained model
 
 @app.route('/') # Homepage
 def home():
